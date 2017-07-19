@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RockPaperScissorsAPP</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </head>
 <body>
-    
+    <form>
+        <div id="user-game">
+            <input type="radio" name="user-choices" value="Rock">Rock<br>
+            <input type="radio" name="user-choices" value="Paper">Paper<br>
+            <input type="radio" name="user-choices" value="Scissors">Scissors<br>
+            <input type="submit" value="Submit" id="endgame">
+        </div>
+    </form>
+    <div id="output"></div>
 </body>
 </html>
