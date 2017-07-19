@@ -1,11 +1,13 @@
-$("#endgame").click(function(event){
-    event.preventDefault();
-    playRPS();
-}); 
+// We need to remember to wrap functionality in a document.ready function
+// or use the windows.onload function
+$(function() {
+    $("#endgame").click(function(event) {
+        event.preventDefault(); // prevent the form from being submitted to the server
+        playRPS();
+    }); 
+});
 
 function playRPS() {
-    
-       
     var rndmPick = Math.random();
     var threePick = Math.floor(rndmPick * 3);
     var userChoice = document.getElementsByName("user-choices");
